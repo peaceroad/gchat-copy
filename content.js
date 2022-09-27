@@ -124,7 +124,7 @@ function inIframe () {
 }
 
 function getButtonContainer(thread) {
-    var arialLabelList = ['Follow', 'Seguir', 'Segui', 'Suivre'];
+    var arialLabelList = ['Follow', 'Seguir', 'Segui', 'Suivre', 'フォロー'];
     var buttonContainer;
     for (const arialLabel of arialLabelList) {
         var buttonContainerSelector = `div[aria-label="${arialLabel}"] > span:first-of-type`;
