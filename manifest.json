@@ -1,6 +1,6 @@
 {
-"manifest_version": 2,
-    "name": "Google Chat thread links & quote reply",
+"manifest_version": 3,
+    "name": "Google Chat thread links & quote reply (mod)",
     "description": "Adds button to copy links to threads on Google Chat and adds button to messages to quote reply",
     "version": "0.0.12",
     "content_scripts": [
