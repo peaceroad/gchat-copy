@@ -160,7 +160,8 @@ function main() {
                             // The new mail.google.com/chat application uses iframes that point to chat.google.com
                             // Rooms are now renamed to spaces. Getting the space id from an attribute in the element
                             const roomId = e.getAttribute('data-p').match(/space\/([^\\"]*)/)[1];
-                            el.value = `https://mail.google.com/chat/#chat/space/${roomId}/${threadId}`;
+                            //el.value = `https://mail.google.com/chat/#chat/space/${roomId}/${threadId}`;
+                            el.value = `https://mail.google.com/mail/u/0/#chat/space/${roomId}/${threadId}`;
                         } else {
                             const roomId = window.location.pathname.match(/\/room\/([^\?\/]*)/)[1];
                             el.value = `https://chat.google.com/room/${roomId}/${threadId}`;
