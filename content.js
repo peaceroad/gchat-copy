@@ -148,9 +148,11 @@ function main() {
                     // Adding copy thread link buttons to thread
                     var copyButton = document.createElement("div");
                     copyButton.className="gchat-xtra-copy";
-                    copyButton.innerHTML = `
-                        Copy thread link
-                    `;
+                    if (document.documentElement.lang === 'ja') {
+                      copyButton.innerHTML = `スレッドのURLをコピー`;
+                    } else {
+                      copyButton.innerHTML = `Copy thread link`;
+                    }
                     copyButton.addEventListener('click', function() {
                         const el = document.createElement('textarea');
                         const threadId = e.getAttribute("data-topic-id");
